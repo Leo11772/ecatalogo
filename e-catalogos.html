@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>e-Catálogos | Catálogo digital com fotos para vendas B2B</title>
+<meta name="description" content="Seu catálogo com fotos no celular de todos os representantes em até 72 horas. Demonstração remota e gratuita.">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{display:['"Bricolage Grotesque"','system-ui','sans-serif'],sans:['"Instrument Sans"','system-ui','sans-serif']},colors:{ink:'#0B1226',brand:'#3B5BFF',sun:'#FFB21F',mint:'#19C39C',paper:'#F4F6FB'}}}}</script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:6rem}body{background:#fff;color:#0B1226}
+:focus-visible{outline:3px solid #FFB21F;outline-offset:2px}
+.glow{background:radial-gradient(60% 50% at 75% 30%,rgba(59,91,255,.55),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(25,195,156,.25),transparent 70%),#0B1226}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-8px)}}
+.rise{animation:rise .7s both}.d1{animation-delay:.12s}.d2{animation-delay:.24s}.d3{animation-delay:.4s}
+.float{animation:float 5s ease-in-out infinite}
+details summary::-webkit-details-marker{display:none}details[open] .chev{transform:rotate(180deg)}
+.chip input:checked+span{background:#0B1226;color:#fff;border-color:#0B1226}
+.inp{width:100%;border:1.5px solid #cbd3e3;border-radius:.75rem;padding:.9rem 1rem;background:#fff;transition:border .15s}
+.inp:focus{border-color:#3B5BFF;outline:none;box-shadow:0 0 0 4px rgba(59,91,255,.15)}.inp.bad{border-color:#e5484d}
+input[type=range]{accent-color:#3B5BFF;width:100%}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<div class="bg-sun text-ink text-center text-sm font-semibold py-2 px-4">Demonstração 100% remota: você recebe um serial por e-mail e testa sem compromisso. <a href="#demo" class="underline">Quero testar</a></div>
+
+<header class="sticky top-0 z-50 bg-ink/95 backdrop-blur text-white" style="top:env(safe-area-inset-top,0px)">
+ <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+  <a href="#topo" class="font-display font-extrabold text-xl">e-<span class="text-sun">Catálogos</span></a>
+  <nav class="hidden md:flex gap-7 text-sm text-white/75" aria-label="Principal">
+   <a class="hover:text-white" href="#economia">Economia</a><a class="hover:text-white" href="#como">Como funciona</a><a class="hover:text-white" href="#recursos">Recursos</a><a class="hover:text-white" href="#para-quem">Para quem</a><a class="hover:text-white" href="#faq">Dúvidas</a>
+  </nav>
+  <div class="flex items-center gap-2">
+   <a href="#demo" class="hidden sm:inline-flex bg-sun text-ink text-sm font-semibold px-4 py-2.5 rounded-lg hover:brightness-95">Pedir demonstração</a>
+   <button id="menuBtn" class="md:hidden p-2 -mr-2" aria-label="Abrir menu" aria-expanded="false"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+ </div>
+ <div id="menu" class="hidden md:hidden px-5 pb-4 space-y-3 border-t border-white/10 pt-3">
+  <a class="block" href="#economia">Economia</a><a class="block" href="#como">Como funciona</a><a class="block" href="#recursos">Recursos</a><a class="block" href="#para-quem">Para quem</a><a class="block" href="#faq">Dúvidas</a>
+ </div>
+</header>
+
+<main id="topo">
+<!-- HERO -->
+<section class="glow text-white overflow-hidden">
+ <div class="max-w-6xl mx-auto px-5 py-16 lg:py-24 grid lg:grid-cols-2 gap-14 items-center">
+  <div>
+   <p class="rise inline-flex items-center gap-2 text-sm bg-white/10 rounded-full px-3 py-1.5 mb-6"><span class="w-2 h-2 rounded-full bg-mint"></span>Mais de 30 anos no mercado de catálogos</p>
+   <h1 class="rise d1 font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-[1.03] tracking-tight">Seu catálogo com fotos no celular de cada representante. Em 72 horas.</h1>
+   <p class="rise d2 mt-6 text-lg text-white/75 max-w-xl">Chega de catálogo impresso caro e desatualizado. O lojista vê a foto, o representante fecha o pedido na hora.</p>
+   <div class="rise d3 mt-8 flex flex-col sm:flex-row gap-3">
+    <a href="#demo" class="text-center bg-sun text-ink font-semibold px-7 py-4 rounded-xl shadow-lg shadow-sun/25 hover:brightness-95">Receber minha demonstração grátis</a>
+    <a href="#economia" class="text-center border border-white/25 font-semibold px-7 py-4 rounded-xl hover:bg-white/10">Calcular minha economia</a>
+   </div>
+   <ul class="rise d3 mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/70">
+    <li>✓ Sem visita presencial</li><li>✓ Vídeos tutoriais</li><li>✓ Suporte e upgrade remotos</li>
+   </ul>
+  </div>
+  <div class="relative rise d2">
+   <div class="float bg-white/10 border border-white/20 rounded-[2.5rem] p-3 max-w-[300px] mx-auto">
+    <div class="bg-white text-ink rounded-[2rem] overflow-hidden">
+     <div class="flex justify-between items-center px-4 py-3 border-b border-slate-100"><b class="font-display">Coleção Verão</b><span class="text-xs bg-paper rounded-full px-2.5 py-1">128 produtos</span></div>
+     <div id="heroGrid" class="grid grid-cols-3 gap-2 p-3"></div>
+     <div class="px-4 py-3 bg-paper flex justify-between items-center text-sm"><span>3 itens no pedido</span><span class="bg-ink text-white font-semibold px-3 py-1.5 rounded-lg">Enviar</span></div>
+    </div>
+   </div>
+   <div class="hidden sm:block absolute -left-2 top-16 bg-white text-ink rounded-xl shadow-2xl px-4 py-3 text-sm"><b class="text-mint">✓ Pedido enviado</b><br><span class="text-slate-500">sem digitar duas vezes</span></div>
+   <div class="hidden sm:block absolute -right-2 bottom-20 bg-white text-ink rounded-xl shadow-2xl px-4 py-3 text-sm"><b>Foto + detalhes</b><br><span class="text-slate-500">na palma da mão</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- CONFIANÇA -->
+<section class="border-b border-slate-200">
+ <div class="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+  <div><p class="font-display font-extrabold text-3xl">30+</p><p class="text-sm text-slate-500">anos no mercado de catálogos</p></div>
+  <div><p class="font-display font-extrabold text-3xl">72h</p><p class="text-sm text-slate-500">para sua equipe vender</p></div>
+  <div><p class="font-display font-extrabold text-3xl">100%</p><p class="text-sm text-slate-500">implantação remota</p></div>
+  <div><p class="font-display font-extrabold text-3xl">0</p><p class="text-sm text-slate-500">deslocamentos da equipe</p></div>
+ </div>
+</section>
+
+<!-- CALCULADORA -->
+<section id="economia" class="bg-paper py-20">
+ <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+  <div>
+   <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">Quanto o catálogo impresso custa para você hoje?</h2>
+   <p class="mt-4 text-slate-600 text-lg">Mexa nos controles. Cada reimpressão é dinheiro que o catálogo digital devolve.</p>
+  </div>
+  <div class="bg-white rounded-2xl p-6 shadow-xl shadow-ink/5 space-y-6">
+   <label class="block"><span class="flex justify-between font-semibold text-sm"><span>Representantes com catálogo</span><output id="oA">20</output></span><input id="rA" type="range" min="1" max="200" value="20"></label>
+   <label class="block"><span class="flex justify-between font-semibold text-sm"><span>Custo de cada catálogo impresso</span><output id="oB">R$ 60</output></span><input id="rB" type="range" min="10" max="300" step="5" value="60"></label>
+   <label class="block"><span class="flex justify-between font-semibold text-sm"><span>Reimpressões por ano</span><output id="oC">2</output></span><input id="rC" type="range" min="1" max="6" value="2"></label>
+   <div class="rounded-xl bg-ink text-white p-5"><p class="text-sm text-white/70">Você investe por ano em impressão</p><p id="res" class="font-display font-extrabold text-4xl mt-1">R$ 2.400</p></div>
+   <a href="#demo" class="block text-center bg-sun font-semibold py-4 rounded-xl hover:brightness-95">Ver quanto posso economizar</a>
+   <p class="text-xs text-slate-500 text-center">Estimativa simples com os valores que você informou, sem contar frete e tempo da equipe.</p>
+  </div>
+ </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como" class="max-w-6xl mx-auto px-5 py-20">
+ <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight max-w-2xl">Da demonstração ao celular da equipe em 3 passos</h2>
+ <ol class="mt-12 grid md:grid-cols-3 gap-6 relative">
+  <li class="rounded-2xl border border-slate-200 p-7"><span class="w-10 h-10 grid place-items-center rounded-full bg-brand text-white font-display font-bold">1</span><h3 class="font-display font-bold text-xl mt-4">Receba o serial</h3><p class="mt-2 text-slate-600">Peça a demonstração. Chega por e-mail e você testa sem sair da cadeira.</p></li>
+  <li class="rounded-2xl border border-slate-200 p-7"><span class="w-10 h-10 grid place-items-center rounded-full bg-brand text-white font-display font-bold">2</span><h3 class="font-display font-bold text-xl mt-4">Implantamos seus dados e fotos</h3><p class="mt-2 text-slate-600">Vídeos tutoriais guiam cada etapa. Você não precisa de TI.</p></li>
+  <li class="rounded-2xl bg-ink text-white p-7"><span class="w-10 h-10 grid place-items-center rounded-full bg-sun text-ink font-display font-bold">3</span><h3 class="font-display font-bold text-xl mt-4">Equipe vendendo em até 72h</h3><p class="mt-2 text-white/75">Ferramenta liberada para todos os celulares da empresa.</p></li>
+ </ol>
+</section>
+
+<!-- FERRAMENTAS (carrossel) -->
+<section id="ferramentas" class="bg-ink text-white py-20 overflow-hidden">
+ <div class="max-w-6xl mx-auto px-5">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+   <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight max-w-2xl">3 ferramentas, uma só operação de vendas</h2>
+   <div class="flex gap-2"><button id="prev" class="w-11 h-11 rounded-full border border-white/25 hover:bg-white/10" aria-label="Anterior">←</button><button id="nextT" class="w-11 h-11 rounded-full bg-sun text-ink" aria-label="Próxima">→</button></div>
+  </div>
+  <div id="track" class="mt-10 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5" style="scrollbar-width:none" tabindex="0" aria-label="Ferramentas"></div>
+  <div id="dots" class="mt-4 flex justify-center gap-2"></div>
+ </div>
+</section>
+
+<!-- RECURSOS -->
+<section id="recursos" class="bg-paper py-20">
+ <div class="max-w-6xl mx-auto px-5">
+  <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight max-w-2xl">Feito para a visita do representante dar certo</h2>
+  <div class="mt-12 grid md:grid-cols-3 gap-5">
+   <div class="md:col-span-2 bg-white rounded-2xl p-8"><h3 class="font-display font-bold text-2xl">Foto de cada produto com todas as informações</h3><p class="mt-3 text-slate-600 max-w-lg">O lojista enxerga o que vai comprar e o representante responde dúvidas na hora, sem depender de amostra ou de ligar para a fábrica.</p></div>
+   <div class="bg-brand text-white rounded-2xl p-8"><h3 class="font-display font-bold text-2xl">Pensado para celulares</h3><p class="mt-3 text-white/85">Navegação rápida e simples para usar em campo.</p></div>
+   <div class="bg-white rounded-2xl p-8"><h3 class="font-display font-bold text-xl">Suporte e upgrade remotos</h3><p class="mt-2 text-slate-600">Ninguém precisa se deslocar. Nem vocês, nem a gente.</p></div>
+   <div class="bg-white rounded-2xl p-8"><h3 class="font-display font-bold text-xl">Economia</h3><p class="mt-2 text-slate-600">Menos gráfica, menos reimpressão, menos viagem.</p></div>
+   <div class="bg-ink text-white rounded-2xl p-8"><h3 class="font-display font-bold text-xl">Experiência real</h3><p class="mt-2 text-white/75">Equipe com mais de trinta anos em catálogos impressos, agora no digital.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- PARA QUEM -->
+<section id="para-quem" class="max-w-6xl mx-auto px-5 py-20">
+ <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">Uma ferramenta para quem vende e para quem compra</h2>
+ <div class="mt-8 flex flex-wrap gap-2" role="tablist" id="tabs"></div>
+ <div id="tabBody" class="mt-6 rounded-2xl bg-ink text-white p-8 md:p-10 min-h-[9rem]" role="tabpanel"></div>
+</section>
+
+<!-- COMPARATIVO -->
+<section class="bg-paper py-20">
+ <div class="max-w-4xl mx-auto px-5">
+  <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">Por que trocar o papel e o PDF</h2>
+  <div class="mt-8 overflow-x-auto rounded-2xl bg-white">
+   <table class="w-full text-left text-sm min-w-[560px]">
+    <thead><tr class="border-b border-slate-200"><th class="p-4"></th><th class="p-4">Impresso</th><th class="p-4">PDF</th><th class="p-4 bg-brand text-white">e-Catálogos</th></tr></thead>
+    <tbody class="divide-y divide-slate-100">
+     <tr><td class="p-4 font-semibold">Fotos com informações</td><td class="p-4">Limitadas</td><td class="p-4">Pesado no celular</td><td class="p-4 font-semibold text-brand">✓ Completas</td></tr>
+     <tr><td class="p-4 font-semibold">Atualização</td><td class="p-4">Reimprimir</td><td class="p-4">Reenviar arquivo</td><td class="p-4 font-semibold text-brand">✓ Remota</td></tr>
+     <tr><td class="p-4 font-semibold">Custo de gráfica</td><td class="p-4">Alto</td><td class="p-4">Nenhum</td><td class="p-4 font-semibold text-brand">✓ Nenhum</td></tr>
+     <tr><td class="p-4 font-semibold">Feito para vender</td><td class="p-4">Não</td><td class="p-4">Não</td><td class="p-4 font-semibold text-brand">✓ Sim</td></tr>
+    </tbody>
+   </table>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-3xl mx-auto px-5 py-20">
+ <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">Dúvidas antes de pedir a demonstração</h2>
+ <div class="mt-8 divide-y divide-slate-200 border-y border-slate-200">
+  <details class="py-5"><summary class="flex justify-between cursor-pointer font-semibold list-none">Alguém precisa ir até a minha empresa?<span class="chev transition-transform">⌄</span></summary><p class="mt-3 text-slate-600">Não. Demonstração, venda, suporte e upgrade acontecem à distância.</p></details>
+  <details class="py-5"><summary class="flex justify-between cursor-pointer font-semibold list-none">Quanto tempo leva para minha equipe começar?<span class="chev transition-transform">⌄</span></summary><p class="mt-3 text-slate-600">Você implanta dados e fotos e libera a ferramenta para os celulares em até 72 horas.</p></details>
+  <details class="py-5"><summary class="flex justify-between cursor-pointer font-semibold list-none">Como eu testo antes de decidir?<span class="chev transition-transform">⌄</span></summary><p class="mt-3 text-slate-600">Enviamos um serial por e-mail para você experimentar a demonstração.</p></details>
+  <details class="py-5"><summary class="flex justify-between cursor-pointer font-semibold list-none">Vou saber usar sozinho?<span class="chev transition-transform">⌄</span></summary><p class="mt-3 text-slate-600">Sim. Oferecemos vídeos tutoriais para cada etapa.</p></details>
+ </div>
+</section>
+
+<!-- FORM -->
+<section id="demo" class="glow text-white py-20">
+ <div class="max-w-5xl mx-auto px-5 grid lg:grid-cols-5 gap-10 items-start">
+  <div class="lg:col-span-2">
+   <h2 class="font-display font-extrabold text-3xl sm:text-4xl tracking-tight">Peça sua demonstração gratuita</h2>
+   <p class="mt-4 text-white/75">São 2 passos rápidos. Depois continuamos pelo WhatsApp.</p>
+   <ul class="mt-6 space-y-3 text-white/85"><li>✓ Sem compromisso</li><li>✓ Sem visita presencial</li><li>✓ Resposta pelo WhatsApp</li></ul>
+  </div>
+  <form id="lead" class="lg:col-span-3 bg-white text-ink rounded-2xl p-6 sm:p-8 shadow-2xl" novalidate>
+   <div class="flex items-center gap-3 text-sm font-semibold"><span id="stepLbl">Passo 1 de 2</span><div class="flex-1 h-2 rounded-full bg-paper overflow-hidden"><div id="bar" class="h-full bg-brand transition-all" style="width:50%"></div></div></div>
+   <div id="s1" class="mt-6">
+    <p class="font-semibold">Qual é o seu perfil?</p>
+    <div class="mt-3 grid grid-cols-2 gap-2" id="chips"></div>
+    <p id="e1" class="hidden text-sm text-red-600 mt-2" role="alert">Escolha uma opção para continuar.</p>
+    <button type="button" id="next" class="mt-6 w-full bg-ink text-white font-semibold py-4 rounded-xl hover:bg-brand transition-colors">Continuar</button>
+   </div>
+   <div id="s2" class="mt-6 hidden space-y-4">
+    <div><label for="nome" class="text-sm font-semibold">Nome</label><input id="nome" class="inp mt-1" autocomplete="name" placeholder="Como podemos te chamar?"><p class="err text-xs text-red-600 mt-1 hidden">Informe seu nome.</p></div>
+    <div><label for="empresa" class="text-sm font-semibold">Empresa</label><input id="empresa" class="inp mt-1" autocomplete="organization" placeholder="Nome da empresa"><p class="err text-xs text-red-600 mt-1 hidden">Informe a empresa.</p></div>
+    <div class="grid sm:grid-cols-2 gap-4">
+     <div><label for="zap" class="text-sm font-semibold">WhatsApp</label><input id="zap" class="inp mt-1" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000"><p class="err text-xs text-red-600 mt-1 hidden">Use DDD + número.</p></div>
+     <div><label for="email" class="text-sm font-semibold">E-mail</label><input id="email" type="email" class="inp mt-1" autocomplete="email" placeholder="voce@empresa.com"><p class="err text-xs text-red-600 mt-1 hidden">E-mail inválido.</p></div>
+    </div>
+    <button class="w-full bg-sun font-semibold py-4 rounded-xl hover:brightness-95">Receber minha demonstração</button>
+    <button type="button" id="back" class="w-full text-sm text-slate-500 underline">Voltar</button>
+    <p class="text-xs text-slate-500 text-center">Usamos seus dados só para enviar a demonstração.</p>
+   </div>
+   <div id="ok" class="hidden text-center py-8"><p class="text-4xl">✓</p><h3 class="font-display font-bold text-2xl mt-2">Quase lá!</h3><p class="text-slate-600 mt-2">Abrimos o WhatsApp para você confirmar. Se não abriu, toque abaixo.</p><a id="okLink" target="_blank" rel="noopener" class="inline-block mt-5 bg-mint text-ink font-semibold px-6 py-3 rounded-xl">Abrir WhatsApp</a></div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="bg-ink text-white/70 text-sm">
+ <div class="max-w-6xl mx-auto px-5 pt-16 pb-8">
+  <div class="grid md:grid-cols-4 gap-10">
+   <div class="md:col-span-2"><p class="font-display font-extrabold text-2xl text-white">e-<span class="text-sun">Catálogos</span></p><p class="mt-3 max-w-sm">Software para o representante comercial demonstrar e vender produtos, feito por uma equipe com mais de 30 anos em catálogos impressos.</p>
+    <a href="https://apps.apple.com/sg/app/e-cat%C3%A1logos/id1021767692" target="_blank" rel="noopener" class="inline-block mt-5 border border-white/25 rounded-lg px-4 py-2 text-white hover:bg-white/10">Baixar na App Store</a></div>
+   <div><p class="font-semibold text-white mb-3">Navegue</p><ul class="space-y-2"><li><a href="#economia" class="hover:text-white">Economia</a></li><li><a href="#como" class="hover:text-white">Como funciona</a></li><li><a href="#recursos" class="hover:text-white">Recursos</a></li><li><a href="#faq" class="hover:text-white">Dúvidas</a></li></ul></div>
+   <div><p class="font-semibold text-white mb-3">Fale com a gente</p><ul class="space-y-2"><li><a href="#demo" class="hover:text-white">Pedir demonstração</a></li><li><a id="fWa" href="#demo" class="hover:text-white">WhatsApp</a></li><li>contato@seudominio.com.br</li><li>Seg a sex, horário comercial</li></ul></div>
+  </div>
+  <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3">
+   <span>© 2026 e-Catálogos. Todos os direitos reservados.</span>
+   <span class="flex gap-5"><a href="#" class="hover:text-white">Política de privacidade</a><a href="#" class="hover:text-white">Termos de uso</a><a href="#topo" class="hover:text-white">Voltar ao topo ↑</a></span>
+  </div>
+ </div>
+</footer>
+
+<div id="bar2" class="md:hidden fixed inset-x-0 bottom-0 z-40 p-3 bg-ink/95 backdrop-blur translate-y-full transition-transform" style="padding-bottom:calc(.75rem + env(safe-area-inset-bottom,0px))"><a href="#demo" class="block text-center bg-sun text-ink font-semibold py-3.5 rounded-xl">Pedir demonstração grátis</a></div>
+
+<!-- POPUP DE CAPTAÇÃO -->
+<div id="pop" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-ink/80 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="popT">
+ <div class="relative w-full max-w-md bg-white text-ink rounded-2xl p-6 sm:p-8 shadow-2xl" style="margin-bottom:env(safe-area-inset-bottom,0px)">
+  <button id="popX" class="absolute right-3 top-3 w-9 h-9 rounded-full hover:bg-paper text-xl leading-none" aria-label="Fechar">×</button>
+  <div id="popForm">
+   <p id="popTag" class="inline-block text-xs font-semibold bg-mint/15 text-ink rounded-full px-3 py-1">Demonstração gratuita</p>
+   <h2 id="popT" class="font-display font-extrabold text-2xl mt-3">Receba a demonstração no seu WhatsApp</h2>
+   <p id="popP" class="mt-2 text-slate-600 text-sm">Deixe seu nome e WhatsApp e enviamos o serial para você testar, sem compromisso.</p>
+   <form id="popF" class="mt-5 space-y-3" novalidate>
+    <div><label for="pNome" class="text-sm font-semibold">Nome</label><input id="pNome" class="inp mt-1" autocomplete="name" placeholder="Como podemos te chamar?"><p class="err text-xs text-red-600 mt-1 hidden">Informe seu nome.</p></div>
+    <div><label for="pZap" class="text-sm font-semibold">WhatsApp</label><input id="pZap" class="inp mt-1" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000"><p class="err text-xs text-red-600 mt-1 hidden">Use DDD + número.</p></div>
+    <button class="w-full bg-sun font-semibold py-4 rounded-xl hover:brightness-95">Quero minha demonstração</button>
+    <button type="button" id="popNo" class="w-full text-sm text-slate-500 underline">Agora não</button>
+   </form>
+  </div>
+  <div id="popOk" class="hidden text-center py-6"><p class="text-4xl">✓</p><h3 class="font-display font-bold text-2xl mt-2">Tudo certo!</h3><p class="text-slate-600 mt-2 text-sm">Abrimos o WhatsApp para você confirmar. Se não abriu, toque abaixo.</p><a id="popLink" target="_blank" rel="noopener" class="inline-block mt-5 bg-mint text-ink font-semibold px-6 py-3 rounded-xl">Abrir WhatsApp</a></div>
+ </div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id), WHATSAPP='5500000000000';
+// menu
+$('menuBtn').onclick=()=>{const o=$('menu').classList.toggle('hidden');$('menuBtn').setAttribute('aria-expanded',!o)};
+$('menu').querySelectorAll('a').forEach(a=>a.onclick=()=>$('menu').classList.add('hidden'));
+// hero tiles
+const cols=[['#3B5BFF','#8EA2FF'],['#FFB21F','#FFD98A'],['#19C39C','#8CE8D1'],['#FF6B6B','#FFB1B1'],['#7A5CFF','#BDB0FF'],['#0B1226','#5A6688']];
+$('heroGrid').innerHTML=cols.map((c,i)=>`<div class="rounded-lg overflow-hidden border border-slate-100"><svg viewBox="0 0 80 64" class="w-full block"><defs><linearGradient id="g${i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c[1]}"/><stop offset="1" stop-color="${c[0]}"/></linearGradient></defs><rect width="80" height="64" fill="url(#g${i})"/><circle cx="${28+i*4}" cy="34" r="${14+(i%3)*3}" fill="#fff" opacity=".35"/><rect x="42" y="26" width="24" height="22" rx="4" fill="#fff" opacity=".55"/></svg><div class="p-1.5"><div class="h-1.5 w-10 rounded bg-slate-200"></div><div class="h-1.5 w-6 rounded bg-slate-100 mt-1"></div></div></div>`).join('');
+// calculadora
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL',maximumFractionDigits:0});
+function calc(){const a=+rA.value,b=+rB.value,c=+rC.value;oA.textContent=a;oB.textContent=fmt(b);oC.textContent=c;res.textContent=fmt(a*b*c)}
+['rA','rB','rC'].forEach(i=>$(i).oninput=calc);calc();
+// abas
+const T={'Indústrias':'Padronize a apresentação dos produtos para toda a equipe e pare de reimprimir a cada lançamento.','Distribuidores':'Amplie o mix na cabeça do lojista: ele vê foto e informação de tudo o que você vende.','Atacadistas':'Mostre muitos itens com clareza e agilize o pedido na visita, sem depender de amostras.','Representantes':'Chegue à loja com o catálogo completo no celular e responda dúvidas na hora.'};
+let cur=Object.keys(T)[0];
+function tabs(){$('tabs').innerHTML=Object.keys(T).map(k=>`<button role="tab" aria-selected="${k==cur}" data-k="${k}" class="px-4 py-2.5 rounded-full font-semibold border ${k==cur?'bg-ink text-white border-ink':'border-slate-300 hover:border-ink'}">${k}</button>`).join('');
+$('tabBody').innerHTML=`<h3 class="font-display font-bold text-2xl">${cur}</h3><p class="mt-3 text-white/80 text-lg max-w-2xl">${T[cur]}</p><a href="#demo" class="inline-block mt-6 bg-sun text-ink font-semibold px-6 py-3 rounded-xl">Quero isso para minha equipe</a>`;
+$('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{cur=b.dataset.k;tabs()})}
+tabs();
+// form
+let perfil='';
+$('chips').innerHTML=['Indústria','Distribuidor','Atacadista','Representante'].map(p=>`<label class="chip cursor-pointer"><input type="radio" name="p" value="${p}" class="sr-only"><span class="block text-center border-2 border-slate-200 rounded-xl py-3.5 font-semibold transition">${p}</span></label>`).join('');
+const step=n=>{$('s1').classList.toggle('hidden',n!=1);$('s2').classList.toggle('hidden',n!=2);$('bar').style.width=n*50+'%';$('stepLbl').textContent='Passo '+n+' de 2'};
+$('next').onclick=()=>{const r=document.querySelector('input[name=p]:checked');if(!r){$('e1').classList.remove('hidden');return}perfil=r.value;$('e1').classList.add('hidden');step(2);$('nome').focus()};
+$('back').onclick=()=>step(1);
+$('zap').oninput=e=>{let v=e.target.value.replace(/\D/g,'').slice(0,11);e.target.value=v.length>6?`(${v.slice(0,2)}) ${v.slice(2,v.length>10?7:6)}-${v.slice(v.length>10?7:6)}`:v.length>2?`(${v.slice(0,2)}) ${v.slice(2)}`:v};
+$('lead').onsubmit=e=>{e.preventDefault();
+ const chk=[['nome',v=>v.trim().length>1],['empresa',v=>v.trim().length>1],['zap',v=>v.replace(/\D/g,'').length>=10],['email',v=>/^\S+@\S+\.\S+$/.test(v)]];let ok=true;
+ chk.forEach(([id,f])=>{const el=$(id),good=f(el.value);el.classList.toggle('bad',!good);el.parentElement.querySelector('.err').classList.toggle('hidden',good);if(!good)ok=false});
+ if(!ok)return;
+ const m=`Olá! Sou ${nome.value.trim()} (${perfil}) da empresa ${empresa.value.trim()}. WhatsApp: ${zap.value}. E-mail: ${email.value.trim()}. Quero receber a demonstração do e-Catálogos.`;
+ const url=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(m)}`;
+ ['s1','s2'].forEach(i=>$(i).classList.add('hidden'));$('ok').classList.remove('hidden');$('bar').style.width='100%';$('stepLbl').textContent='Pronto';$('okLink').href=url;window.open(url,'_blank','noopener')};
+$('fWa').href=`https://wa.me/${WHATSAPP}`;
+
+// carrossel de ferramentas (edite nomes, textos e imagens aqui)
+const TOOLS=[
+ {n:'App do representante',t:'Para o representante comercial',d:'O catálogo com foto e informações completas de cada produto, na palma da mão, para demonstrar e vender na visita.',b:['Fotos e detalhes de todos os itens','Pedido feito na hora, com o lojista'],c:['#3B5BFF','#8EA2FF']},
+ {n:'Vendedor interno',t:'Para a equipe de dentro da empresa',d:'A mesma base de produtos e fotos usada pelos representantes, para atender clientes com agilidade e informação igual para todos.',b:['Catálogo sempre atualizado','Suporte e upgrade remotos'],c:['#19C39C','#8CE8D1']},
+ {n:'Loja do lojista',t:'Para quem compra',d:'O lojista navega pelos produtos, vê as fotos e escolhe com segurança, sem depender de catálogo impresso.',b:['Navegação simples e visual','Compra com mais clareza'],c:['#FFB21F','#FFD98A']}];
+const track=$('track');
+track.innerHTML=TOOLS.map((x,i)=>`<article class="snap-center shrink-0 w-[86%] sm:w-[560px] bg-white/5 border border-white/15 rounded-3xl p-6 sm:p-8 flex gap-6 items-center">
+ <div class="hidden sm:block shrink-0 w-[150px] rounded-[1.6rem] bg-white/10 border border-white/20 p-2"><div class="bg-white rounded-[1.2rem] overflow-hidden"><svg viewBox="0 0 120 200" class="block w-full"><defs><linearGradient id="t${i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${x.c[1]}"/><stop offset="1" stop-color="${x.c[0]}"/></linearGradient></defs><rect width="120" height="200" fill="#F4F6FB"/><rect width="120" height="26" fill="#0B1226"/><rect x="8" y="9" width="40" height="8" rx="4" fill="#fff" opacity=".6"/>${[0,1,2,3].map(k=>`<g><rect x="${8+(k%2)*54}" y="${34+Math.floor(k/2)*62}" width="50" height="56" rx="8" fill="url(#t${i})"/><circle cx="${33+(k%2)*54}" cy="${58+Math.floor(k/2)*62}" r="11" fill="#fff" opacity=".45"/><rect x="${14+(k%2)*54}" y="${82+Math.floor(k/2)*62}" width="30" height="4" rx="2" fill="#fff" opacity=".8"/></g>`).join('')}<rect x="8" y="164" width="104" height="26" rx="8" fill="#0B1226"/><rect x="34" y="174" width="52" height="6" rx="3" fill="#FFB21F"/></svg></div></div>
+ <div><p class="text-sm text-sun font-semibold">${x.t}</p><h3 class="font-display font-bold text-2xl mt-1">${x.n}</h3><p class="mt-3 text-white/75">${x.d}</p><ul class="mt-4 space-y-1.5 text-sm text-white/85">${x.b.map(b=>`<li>✓ ${b}</li>`).join('')}</ul><a href="#demo" class="inline-block mt-5 bg-sun text-ink font-semibold px-5 py-2.5 rounded-lg text-sm">Quero conhecer</a></div></article>`).join('');
+$('dots').innerHTML=TOOLS.map((_,i)=>`<button class="w-2.5 h-2.5 rounded-full bg-white/30" aria-label="Ferramenta ${i+1}" data-i="${i}"></button>`).join('');
+const cards=[...track.children],dots=[...$('dots').children];let idx=0;
+const go=i=>{idx=(i+cards.length)%cards.length;track.scrollTo({left:cards[idx].offsetLeft-track.offsetLeft-(parseFloat(getComputedStyle(track).paddingLeft)||0),behavior:'smooth'})};
+$('prev').onclick=()=>go(idx-1);$('nextT').onclick=()=>go(idx+1);dots.forEach(d=>d.onclick=()=>go(+d.dataset.i));
+const mark=()=>{let best=0,bd=1e9;cards.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-track.offsetLeft-track.scrollLeft-(parseFloat(getComputedStyle(track).paddingLeft)||0));if(d<bd){bd=d;best=i}});idx=best;dots.forEach((d,i)=>d.style.background=i==best?'#FFB21F':'rgba(255,255,255,.3)')};
+track.addEventListener('scroll',mark,{passive:true});mark();
+// barra fixa mobile
+const b2=$('bar2');addEventListener('scroll',()=>{const y=scrollY,d=$('demo').getBoundingClientRect();b2.classList.toggle('translate-y-full',y<500||(d.top<innerHeight&&d.bottom>0))},{passive:true});
+
+// popup de captação + redirecionamento no botão voltar (uma única vez, sem prender o visitante)
+const store={get:k=>{try{return sessionStorage.getItem(k)}catch(e){return null}},set:k=>{try{sessionStorage.setItem(k,'1')}catch(e){}}};
+const pop=$('pop');let lastFocus=null,popOpen=false;
+function openPop(exit){
+ if(popOpen||store.get('lead'))return;popOpen=true;lastFocus=document.activeElement;
+ if(exit){$('popTag').textContent='Espere, antes de sair';$('popT').textContent='Sua demonstração grátis está a um passo';$('popP').textContent='Informe nome e WhatsApp e mandamos o serial. Leva menos de 1 minuto.'}
+ pop.classList.remove('hidden');pop.classList.add('flex');document.body.style.overflow='hidden';setTimeout(()=>$('pNome').focus(),50);
+}
+function closePop(){popOpen=false;pop.classList.add('hidden');pop.classList.remove('flex');document.body.style.overflow='';store.set('seen');lastFocus&&lastFocus.focus&&lastFocus.focus()}
+$('popX').onclick=closePop;$('popNo').onclick=closePop;
+pop.addEventListener('click',e=>{if(e.target===pop)closePop()});
+addEventListener('keydown',e=>{if(!popOpen)return;if(e.key==='Escape')closePop();if(e.key==='Tab'){const f=[...pop.querySelectorAll('button:not([hidden]),input,a[href]')].filter(x=>x.offsetParent);const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}});
+$('pZap').oninput=e=>{let v=e.target.value.replace(/\D/g,'').slice(0,11);e.target.value=v.length>6?`(${v.slice(0,2)}) ${v.slice(2,v.length>10?7:6)}-${v.slice(v.length>10?7:6)}`:v.length>2?`(${v.slice(0,2)}) ${v.slice(2)}`:v};
+$('popF').onsubmit=e=>{e.preventDefault();
+ const c=[['pNome',v=>v.trim().length>1],['pZap',v=>v.replace(/\D/g,'').length>=10]];let ok=true;
+ c.forEach(([id,f])=>{const el=$(id),g=f(el.value);el.classList.toggle('bad',!g);el.parentElement.querySelector('.err').classList.toggle('hidden',g);if(!g)ok=false});
+ if(!ok)return;
+ const n=$('pNome').value.trim(),z=$('pZap').value;store.set('lead');
+ $('nome').value=n;$('zap').value=z; // pré-preenche o formulário principal
+ const url=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(`Olá! Sou ${n}. Meu WhatsApp: ${z}. Quero receber a demonstração do e-Catálogos.`)}`;
+ $('popForm').classList.add('hidden');$('popOk').classList.remove('hidden');$('popLink').href=url;window.open(url,'_blank','noopener');
+};
+// abre ao entrar na página
+setTimeout(()=>openPop(false),1200);
+// botão voltar: mostra o popup uma vez e, no segundo clique, o visitante sai normalmente
+try{history.pushState({e:1},'',location.href);
+ addEventListener('popstate',()=>{if(!store.get('lead')&&!store.get('backShown')){store.set('backShown');popOpen=false;openPop(true)}});
+}catch(e){}
+</script>
+</body>
+</html>
